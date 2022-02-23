@@ -27,7 +27,7 @@ sourceCompatibility = '1.8'
 
 bootJar {
 	baseName = 'product-service'
-	version =  '0.0.3'
+	version =  '0.0.6'
 }
 
 task unpack(type: Copy) {
@@ -48,6 +48,9 @@ repositories {
 }
 
 dependencies {
+	implementation group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '2.7.3'
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.5.2'
+
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
