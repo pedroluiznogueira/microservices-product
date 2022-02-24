@@ -27,7 +27,7 @@ sourceCompatibility = '1.8'
 
 bootJar {
 	baseName = 'product-service'
-	version =  '0.0.6'
+	version =  '0.0.7'
 }
 
 task unpack(type: Copy) {
@@ -48,8 +48,11 @@ repositories {
 }
 
 dependencies {
+	runtimeOnly 'mysql:mysql-connector-java'
 	implementation group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '2.7.3'
 	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.5.2'
+
+	implementation group: 'com.amazonaws', name: 'aws-java-sdk-sns', version: '1.12.132'
 
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
