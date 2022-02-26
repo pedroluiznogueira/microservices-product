@@ -52,6 +52,7 @@ dependencies {
 	implementation group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '2.7.3'
 	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.5.2'
 
+	implementation group: 'com.amazonaws', name: 'aws-java-sdk-sqs', version: '1.11.887'
 	implementation group: 'com.amazonaws', name: 'aws-java-sdk-sns', version: '1.12.132'
 
 	implementation 'org.springframework.boot:spring-boot-starter-web'
