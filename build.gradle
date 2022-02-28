@@ -27,7 +27,7 @@ sourceCompatibility = '1.8'
 
 bootJar {
 	baseName = 'product-service'
-	version =  '1.0.0'
+	version =  '2.0.0'
 }
 
 task unpack(type: Copy) {
@@ -54,6 +54,8 @@ dependencies {
 
 	implementation group: 'com.amazonaws', name: 'aws-java-sdk-sqs', version: '1.11.887'
 	implementation group: 'com.amazonaws', name: 'aws-java-sdk-sns', version: '1.12.132'
+	implementation group: 'com.amazonaws', name: 'aws-java-sdk-s3', version: '1.11.887'
+
 
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
